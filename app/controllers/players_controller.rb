@@ -51,6 +51,6 @@ class PlayersController < OpenReadController
   # Only allow a trusted parameter "white list" through.
   def player_params
     puts 'Inside params'
-    params.require(:player).permit(:name, :position, :keeper, :user_id)
+    params.require(:player).permit(:name, :position, :keeper, :user_id, :roster_spot)
   end
 end
