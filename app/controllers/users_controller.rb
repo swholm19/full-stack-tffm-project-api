@@ -81,6 +81,6 @@ class UsersController < ProtectedController
 
   def user_params
     params.require(:user)
-          .permit(:email, :name, :team_name, :team_statement)
+          .permit(:email, :name, :team_name, :team_statement, :league_id)
   end
 end
